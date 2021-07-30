@@ -1,0 +1,13 @@
+*
+{
+    outline: none;
+}
+.container
+{
+    border: 2px solid black;
+    padding: 10px;
+}
+#ageInDays
+{
+    font-size: 25px;
+}
