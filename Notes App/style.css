@@ -1,0 +1,58 @@
+.container
+{
+    border: 1px solid lightgrey;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.note-container
+{
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    border: none !important;
+}
+.note-container .card
+{
+    margin: 1rem;
+    height: auto;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+    scroll-behavior: smooth;
+}
+.note-container .card
+{
+    width: 20rem;
+}
+@media only screen and (max-width: 1200px)
+{
+    .note-container .card
+    {
+        width: 25rem;
+    }
+}
+@media only screen and (max-width: 990px)
+{
+    .note-container .card
+    {
+        width: 50rem;
+    }
+}
+.backdrop
+{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+.modal-backdrop
+{
+    display: none;
+}
