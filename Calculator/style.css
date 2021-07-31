@@ -1,0 +1,85 @@
+*
+{
+    padding: 0;
+    margin: 0;text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: whitesmoke;
+}
+.container
+{
+    background: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+}
+.container .screen
+{
+    width: 25rem;
+    height: 5rem;
+    background: green;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.container .row
+{
+    width: 25rem;
+    height: 5.5rem;
+    padding-left: 2rem;
+}
+.container .row .btn
+{
+    border: none;
+    background: #9dd2fa;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.container .row .btn:hover
+{
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#action
+{
+    height: 8rem;
+}
+#action .btn
+{
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    margin-top: 0.75rem;
+}
+#clear-all
+{
+    background: orangered;
+}
+#equals
+{
+    background: rgb(57, 240, 57);
+}
+.screen
+{
+    font-size: 3rem;
+    padding: 1rem;
+    color: black;
+}
