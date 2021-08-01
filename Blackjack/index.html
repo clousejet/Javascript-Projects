@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <link rel = "icon" type = "image/png" href = "Images/blackjack_icon.png">
+    <title>Blackjack</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>BlackJack</h1>
+            <h2 id = "decision">Let's Play</h2>
+        </div>
+        <div class="playground">
+            <div id = "user-area" class="deal-area">
+                <h2>You: <span id = "user-score">0</span></h2>
+            </div>
+            <div id = "dealer-area" class="deal-area">
+                <h2>Dealer: <span id = "dealer-score">0</span></h2>
+            </div>
+        </div>
+        <div class="action">
+            <button class="btn" id = "hit-btn">Hit</button>
+            <button class="btn" id = "stand-btn">Stand</button>
+            <button class="btn" id = "deal-btn">Deal</button>
+        </div>
+    </div>
+</body>
+<script src = "app.js"></script>
+</html>
