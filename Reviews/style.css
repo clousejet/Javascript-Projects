@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main h1
+{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.main .container
+{
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    width: 50vw;
+    height: 60vh;
+    padding: 1rem;
+}
+.main .container .profile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.main .container .profile img
+{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.main .container .profile .info
+{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.main .container .review
+{
+    width: 50%;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.main .container .review p
+{
+    font-size: 1.5rem;
+}
+.main .container .controls .action-btn
+{
+    background: none;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    color: #0082e6;
+    cursor: pointer;
+}
+.main .container .controls #surprise-btn
+{
+    background: #1b9bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
