@@ -1,0 +1,136 @@
+* 
+{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+}
+#container {
+    width: auto;
+    height: 550px;
+    background-color: aqua;
+    margin: 20px;
+}
+#calculator {
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    top: 15px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#result {
+    height: 120px;
+    overflow-x: scroll;
+}
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+    margin-bottom: 10px !important;
+    padding-bottom: 10px;
+}
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+#keyboard {
+    height: 400px;
+}
+.operator,
+.number,
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number,
+.empty {
+    background-color: #eaedef;
+}
+.number,
+.operator {
+    cursor: pointer;
+}
+.operator:active,
+.number:active {
+    font-size: 13px;
+}
+#keyboard button:hover
+{
+    background: lightgrey;
+    transition: 0.25s;
+}
+#keyboard #empty:hover,
+#keyboard #empty2:hover
+{
+    background: #eaedef;
+}
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+button:nth-child(20)
+{
+    font-size: 20px;
+}
+button:nth-child(4) {
+    background-color: #20b2aa;
+}
+button:nth-child(8) {
+    background-color: #ffa500;
+}
+button:nth-child(12) {
+    background-color: #f08080;
+}
+button:nth-child(16) {
+    background-color: #7d93e0;
+}
+button:nth-child(20) {
+    background-color: #9477af;
+}
+#mode-toggler
+{
+    position: absolute;
+    right: 50px;
+    bottom: 75px;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#mode-toggler:hover
+{
+    background: white;
+    color: black;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.hover:hover
+{
+    background: rgb(133, 129, 129) !important;
+}
