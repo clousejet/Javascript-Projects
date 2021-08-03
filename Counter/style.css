@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface:regular);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background: whitesmoke;
+    font-family: 'Abril Fatface', cursive;
+}
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1
+{
+    font-size: 20rem;
+}
+.container .btns .btn
+{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.container .btns #decrease-btn
+{
+    background: orangered;
+}
+.container .btns #reset-btn
+{
+    background: #066de2;
+}
+.container .btns #increase-btn
+{
+    background: green;
+}
