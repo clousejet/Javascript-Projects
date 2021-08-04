@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.container .image
+{
+    height: 20rem;
+    width: 20rem;
+}
+.container .image img
+{
+    height: 20rem;
+    width: 30rem;
+}
+.container .main
+{
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    align-self: flex-end;
+    height: 30rem;
+    width: 50rem;
+    padding: 2rem;
+}
+.container .main .info .tabs
+{
+    display: flex;    
+    justify-content: space-around;
+}
+.container .main .info .tabs .tab
+{
+    background: #f6f6f6;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+.container .main .info .tabs .active
+{
+    background-color: #fff;
+}
+.container .main .content
+{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: none;
+}
+.container .main .active
+{
+    display: block;
+}
