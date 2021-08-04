@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2 !important;
+    top: 0;
+    left: 0;
+}
+h1
+{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 48vh;
+    left: 40vw;
+}
+.switch-btn #play
+{
+    background: #0082e6;
+}
+.slide #pause
+{
+    background: #0082e6;
+}
+.slide #play
+{
+    background: none;
+}
