@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.container h1
+{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.container .timer
+{
+    display: flex;
+}
+.container .timer .time
+{
+    padding: 1rem;
+    background: black;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .timer .time p
+{
+    color: lightgrey;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.container .timer .time .num
+{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
