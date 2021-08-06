@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    min-width: 50rem;
+    min-height: 20rem;
+    height: auto;
+}
+.container .question-container h1
+{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+}
+.container .question-container ul li
+{
+    margin: 1rem;
+    cursor: pointer;
+}
+.container .question-container ul li label
+{
+    color: #000;
+    font-size: 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+.container .question-container
+{
+    margin: 3rem;
+}
+.container button
+{
+    width: 100%;  
+    background: #0082e6;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 0 0 1rem 1rem;
+}
+.container button:hover
+{
+    background: #1b9bff;
+    transition: 0.5s;
+}
+#scoreText
+{
+    text-align: center;
+    margin-top: 3rem;
+}
+meter
+{
+    height: 5rem;
+    border: 1px solid lightgrey;
+    width: 30rem;
+    margin-top: 3rem;
+    margin-left: 9rem;
+}
+#replay
+{
+    margin-top: 3rem;
+}
