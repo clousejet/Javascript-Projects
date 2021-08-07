@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Recipe App</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <i class="fa fa-bars"></i>
+            <label class="logo">
+                Recipie!
+            </label>
+            <i class="fa fa-search"></i>
+        </nav>
+        <header>
+            <input type="text" placeholder="Search..." id = "search-term">
+            <button id="search">Search</button>
+        </header>
+        <div class="meal-slider">
+            <ul>
+                
+            </ul>
+        </div>
+        <button id="nextRecipe">&gt;</button>
+        <div class="meals">
+            <div class="card">
+                <h1>Personalize <span id="cross-btn">&times;</span></h1>
+                <p>Your recommendations</p>
+                <center><button id = "recommend-btn">Start Recommending</button></center>
+            </div>
+        </div>
+    </div>
+</body>
+<script src = "app.js"></script>
+</html>
