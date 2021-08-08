@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    max-width: 50vw;
+}
+.container .form-group
+{
+    width: 100%;
+    padding: 2rem;
+    background: #ededed;
+}
+.container .form-group input
+{
+    padding: 0.5rem 1rem;
+    border: 1px solid lightgrey;
+    font-size: 1.5rem;
+}
+.container .form-group button
+{
+    padding: 0.5rem 1rem;
+    background: #0082e6;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.container .form-group button:hover
+{
+    background: #1b9bff;
+    transition: 0.5s;
+}
+.container .profile
+{
+    padding: 2rem;
+}
+.container .profile .profile-header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .profile .profile-header img
+{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.container .profile .profile-header p
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+.container .profile .profile-body
+{
+    font-size: 1.5rem;
+}
+a
+{
+    color: #0082e6;
+    text-decoration: underline !important;
+}
+a:hover
+{
+    color: #0354b1;
+}
