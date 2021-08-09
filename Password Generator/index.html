@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+            <input type="text" id="password" disabled>
+            <i class="fa fa-copy"></i>
+        </div>
+        <div class="password-info">
+            <div>
+                <label for="password-length">Password length</label>
+                <input type="number" value = "8" id="password-length">
+            </div>
+            <div>
+                <label for="uppercase-letters">Include Uppercase Letters</label>
+                <input type="checkbox" name="parameters" checked id="uppercase-letters">
+            </div>
+            <div>
+                <label for="lowercase-letters">Include Lowercase Letters</label>
+                <input type="checkbox" name="parameters" checked id="lowercase-letters">
+            </div>
+            <div>
+                <label for="numbers">Include Numbers</label>
+                <input type="checkbox" name="parameters" id="numbers">
+            </div>
+            <div>
+                <label for="symbols">Include Symbols</label>
+                <input type="checkbox" name="parameters" id="symbols">
+            </div>
+        </div>
+        <button type = "button" id = "generator">Generate Password</button>
+    </div>
+</body>
+</html>
