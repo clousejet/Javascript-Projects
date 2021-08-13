@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png" type="image/png">
+    <script src="app.js" defer></script>
+    <title>VS Code</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <label class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1024px-Visual_Studio_Code_1.35_icon.svg.png" alt="Logo">
+            </label>
+            <div class="links">
+                <div class="link">File</div>
+                <div class="link">Edit</div>
+                <div class="link">Selection</div>
+                <div class="link">View</div>
+                <div class="link">Go</div>
+                <div class="link">Run</div>
+                <div class="link">Terminal</div>
+                <div class="link">Help</div>
+            </div>
+            <div class="file-name">
+                index.html - Javascript Projects - Visual Studio Code
+            </div>
+            <div class="icons">
+                <div id="minus">&minus;</div>
+                <div id="resize"><i class="fa fa-window-maximize"></i></div>
+                <div id="exit">&times;</div>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <div class="sidebar">
+            <div class="extensions">
+                <div class="icon active" id = "files"><i class="fa fa-files-o"></i></div>
+                <div class="icon" id = "search"><i class="fa fa-search"></i></div>
+                <div class="icon" id = "fork"><i class="fa fa-code-fork"></i></div>
+                <div class="icon" id = "play"><i class="fa fa-play"></i></div>  
+            </div>
+            <div class="settings">
+                <div class="icon" id = "user"><i class="fa fa-user"></i></div>
+                <div class="icon" id = "settings"><i class="fa fa-gear"></i></div>
+            </div>
+        </div>
+    </aside>
+    <aside>
+        <div class="sidemenu">
+            <div class="sidemenu-header">
+                <h2>Explorer</h2>
+                <h1><i class="fa fa-angle-down" id = "file-toggler" style = "margin-right: 1rem;"></i>Javascript Projects</h1>
+            </div>
+            <div class="sidemenu-body">
+                <div><span>&gt;</span> <i class="fa fa-folder"></i>VS Code Alternative</div>
+                <div><span>&gt;</span> <i class="fa fa-folder"></i>VS Code Alternative</div>
+                <div><span>&gt;</span> <i class="fa fa-folder"></i>VS Code Alternative</div>
+                <div class = "active"><span>&gt;</span> <i class="fa fa-folder"></i>VS Code Alternative</div>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="header">
+            <div class="main">
+                <div class="filename-container">index.html</div>
+                <div class="filename-container">style.css</div>
+                <div class="filename-container">app.js</div>
+            </div>
+            <div class="path">
+                VS_Code_Clone > index.html > html > body > main > div.header > div.path
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="preview">
+            
+        </div>
+    </aside>
+    <div class="container">
+        <div class="line-counter">
+            <textarea data-id="1" rows="1" disabled>1</textarea>
+        </div>
+        <div class="code">
+            <textarea onkeydown = "eventHandler()" autofocus data-id="1" rows="1"></textarea>
+        </div>
+    </div>
+</body>
+</html>

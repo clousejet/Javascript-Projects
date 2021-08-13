@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar
+{
+    height: 3.85rem;
+    display: flex;
+    align-items: center;
+    background: #323233;
+}
+.navbar .logo
+{
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+}
+.navbar .logo img
+{
+    height: 2rem;
+    width: 2rem;
+}
+.navbar .links
+{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.navbar .links .link
+{
+    font-size: 1.5rem;
+    padding: 0 1rem; 
+    color: #ededed;
+    height: 3.85rem;
+    display: flex;
+    align-items: center;
+    cursor: context-menu;
+}
+.navbar .links .link:hover
+{
+    background: lightgrey;
+}
+.navbar .file-name
+{
+    width: 60%;
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: 1px;   
+    text-align: center;
+}
+.navbar .icons
+{
+    display: flex;
+    margin-right: 1rem;
+    width: 12%;
+}
+.navbar .icons div
+{
+    height: 3.85rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    padding: 0 2rem;
+}
+.navbar .icons #resize
+{
+    font-size: 2rem;
+}
+.navbar .icons div:hover
+{
+    background: lightgrey;
+    cursor: context-menu;
+}
+.navbar .icons #exit:hover
+{
+    background: red;
+}
+.sidebar
+{
+    width: 6rem;
+    background: #1e1e1f;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 3.85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar .extensions
+{
+    height: 70%;
+}
+.sidebar .extensions,
+.sidebar .settings
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar .extensions .icon,
+.sidebar .settings .icon
+{
+    font-size: 3rem;
+    color: darkgrey;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    cursor: pointer;
+}
+.sidebar .extensions .icon:hover,
+.sidebar .settings .icon:hover
+{
+    color: white;
+}
+.sidebar .extensions .active
+{
+    border-left: 3px solid white;
+}
+.sidebar .extensions .active i
+{
+    color: white;
+}
+.sidemenu
+{
+    width: 20rem;
+    background: #4a4a4a;
+    height: 100%;
+    position: fixed;
+    left: 6rem;
+    top: 3.85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidemenu .sidemenu-header
+{
+    background: #272727;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+}
+.sidemenu .sidemenu-header h2
+{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.sidemenu .sidemenu-header h1:hover
+{
+    cursor: pointer;
+}
+.sidemenu .sidemenu-body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: scroll;
+}
+.sidemenu .sidemenu-body div
+{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.4rem 0;
+}
+.sidemenu .sidemenu-body div:hover
+{
+    background: lightgrey;
+}
+.sidemenu .sidemenu-body div i,
+.sidemenu .sidemenu-body div span
+{
+    margin: 0 0.5rem;
+}
+.sidemenu .sidemenu-body div i
+{
+    color: goldenrod;
+}
+.sidemenu .sidemenu-body .active
+{
+    background: lightgrey;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+    scroll-behavior: smooth;
+}
+.header
+{
+    background: grey;
+    height: 6.6rem;
+    position: fixed;
+    width: 100%;
+    left: 26rem;
+}
+.header .main
+{
+    height: 4rem;
+    display: flex;
+}
+.header .main .filename-container
+{
+    padding: 1rem 3rem;
+    background: darkgrey;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    border-right: 1px solid #4a4a4a;
+    cursor: pointer;
+}
+.header .path
+{
+    width: 100%;
+    background: black;
+    height: 2.6rem;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.preview
+{
+    position: absolute;
+    background: #4a4a4a;
+    right: 0;
+    width: 15rem;
+    top: 10.5rem;
+    height: 83.25%;
+    padding: 1rem;
+    overflow: scroll;
+}
+.container
+{
+    background: #202020;
+    width: 70%;
+    height: 83.25%;
+    position: absolute;
+    top: 10.5rem;
+    left: 26rem;
+    overflow: scroll;
+    display: flex;
+}
+.container .line-counter
+{
+    width: 8rem;
+    min-height: 100%;
+    height: auto;
+    border-right: 1px solid lightgrey;
+    margin-right: 1rem;
+}
+.container .line-counter textarea
+{
+    resize: none;
+    width: 7rem;
+    background: #202020;
+    border: none;
+    margin-left: 0.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+.container .code textarea
+{
+    font-family: inherit;
+    resize: none;
+    width: 86rem;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    background: inherit;
+    color: white;
+    border: none;
+}
+.container .code textarea:focus
+{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
