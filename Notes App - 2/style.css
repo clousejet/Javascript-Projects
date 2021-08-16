@@ -1,0 +1,70 @@
+*
+{
+    outline: none;
+}
+body
+{
+    background: whitesmoke !important;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+}
+.btn-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notes
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.notes .note
+{
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    width: 20rem;
+    margin: 1.5rem;
+}
+.notes .note .title
+{
+    height: 7rem;
+}
+.notes .note .description
+{
+    height: 18rem;
+}
+.notes .note .title,
+.notes .note .description
+{
+    padding: 1rem 1.5rem;
+    overflow-y: scroll;
+}
+.notes .note .tools
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightgreen;
+    padding: 0.5rem 1rem;
+}
+.notes .note .tools i
+{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.notes .note .tools i:hover
+{
+    color: orangered;
+    transition: 0.25s;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+    scroll-behavior: smooth;
+}
