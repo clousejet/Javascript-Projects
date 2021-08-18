@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body
+{
+    background: whitesmoke;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    background: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);    
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .search
+{
+    margin-bottom: 1rem;
+}
+.container .search input
+{
+    border: 1px solid lightgrey;
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem;
+    color: #4a4a4a;
+}
+.container .search button
+{
+    background: #0082e6;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+}
+.container .search button:hover
+{
+    background: #1b9bff;
+    transition: 0.5s;    
+}
+.container .header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .header img
+{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+.container .body,
+.container .footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
