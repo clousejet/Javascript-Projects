@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WYSIWYG</title>
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- Editor -->
+    <div class="editor">
+        
+        <!-- Toolbar -->
+        <div class="toolbar">
+
+            <!-- First row -->
+            <div class="line">
+                <div class="box">
+                   <span class="btn icon smaller" data-action="bold" data-tag-name="b" title="Bold">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25432.svg">
+                   </span>
+                   <span class="btn icon smaller" data-action="italic" data-tag-name="i" title="Italic">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25392.svg">
+                   </span>
+                   <span class="btn icon smaller" data-action="underline" data-tag-name="u" title="Underline">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25433.svg">
+                   </span>
+                   <span class="btn icon smaller" data-action="strikeThrough" data-tag-name="strike" title="Strikethrough">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25626.svg">
+                   </span>
+                </div>
+             
+                <div class="box">
+                   <span class="btn icon has-submenu">
+                      <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25351.svg">
+                      <div class="submenu">
+                         <span class="btn icon" data-action="justifyLeft" data-style="textAlign:left" title="Justify Left">
+                           <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25351.svg">  
+                         </span>
+                         <span class="btn icon" data-action="justifyCenter" data-style="textAlign:center" title="Justify Center">
+                           <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25440.svg">  
+                         </span>
+                         <span class="btn icon" data-action="justifyRight" data-style="textAlign:right" title="Justify Right">
+                           <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25288.svg">  
+                         </span>
+                         <span class="btn icon" data-action="formatBlock" data-style="textAlign:justify" title="Justify Block">
+                           <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25181.svg">  
+                         </span>
+                      </div>
+                   </span>
+                   <span class="btn icon" data-action="insertOrderedList" data-tag-name="ol" title="Ordered List">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25242.svg">  
+                   </span>
+                   <span class="btn icon" data-action="insertUnorderedList" data-tag-name="ul" title="Unordered List">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25648.svg">  
+                   </span>
+                   <span class="btn icon" data-action="outdent" title="Outdent">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25410.svg">  
+                   </span>
+                   <span class="btn icon" data-action="indent" title="Indent">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25233.svg">  
+                   </span>
+                </div>
+             
+                <div class="box">
+                   <span class="btn icon" data-action="insertHorizontalRule" title="Horizontal Rule">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25232.svg">  
+                   </span>
+                </div>
+             </div>
+
+             <!-- Second row -->
+             <div class="line">
+                <div class="box">
+                   <span class="btn icon smaller" data-action="undo" title="Undo">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25249.svg">
+                   </span>
+                   <span class="btn icon" data-action="removeFormat" title="Remove Format">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25454.svg">  
+                   </span>
+                </div>
+                
+                <div class="box">
+                   <span class="btn icon" data-action="code" title="Source">
+                     <img loading="lazy" src="https://image.flaticon.com/icons/svg/25/25185.svg">
+                   </span>
+                </div>
+             
+             </div>
+
+             <!-- Content Area -->
+            <div class="content-area">
+                <div class="visual-view" contenteditable>
+                    
+                </div>
+                <textarea class="html-view" disabled></textarea>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
